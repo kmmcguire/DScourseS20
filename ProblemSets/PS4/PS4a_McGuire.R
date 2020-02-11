@@ -1,0 +1,7 @@
+library(jsonlite)
+system("wget -O stats.json http://api.fantasy.nfl.com/v1/players/stats?statType=seasonStats&season=2010&week=1&format=json")
+system("cat stats.json")
+# if running in Windows mydf <- fromJSON("http://api.fantasy.nfl.com/v1/players/stats?statType=seasonStats&season=2010&week=1&format=json")
+mydf <- fromJSON('stats.json')
+class(mydf$players)
+head(mydf$players, 5)

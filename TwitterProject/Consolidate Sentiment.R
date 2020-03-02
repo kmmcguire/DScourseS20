@@ -82,7 +82,7 @@ for (j in startDay:endDay) {
     cs <- rbind(cs, yang_output_df)
     rm(yang_output_df)
   }
-  save(cs, file = paste0(loopDate,"_cs.Rda"))
+  save(cs, file = paste0("TwitterProject/ProcessedTweets/",loopDate,"_cs.Rda"))
   rm(cs)
 }
   

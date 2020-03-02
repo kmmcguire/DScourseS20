@@ -4,15 +4,17 @@ library(sentimentr)
 #Set date range of files to clean
 startYear = "2020"
 startMonth = "02"
-startDay = 18
-endDay = 19
+startDay = 20
+endDay = 23
 
 for (j in startDay:endDay) {
   loopDate = paste0(startYear,"-",startMonth,"-",formatC(j, width = 2, format ="d", flag = "0"))
+  setwd("~/DScourseS20/TwitterProject/RawTweets")
   loopFile = paste0(loopDate,".Rda")
   my_files <- list.files(pattern = loopFile)
   my_data <- lapply(my_files, load, .GlobalEnv)
   
+  setwd("~/DScourseS20/TwitterProject/ProcessedTweets")
   if(exists("sanders_tweets")){
     sanders_temp_df <- sentiment(get_sentences(c(sanders_tweets$text)))
     sanders_temp_df <- aggregate(sentiment ~ element_id, sanders_temp_df, sum)

@@ -4,8 +4,8 @@ library(sentimentr)
 #Set date range of files to clean
 startYear = "2020"
 startMonth = "02"
-startDay = 20
-endDay = 23
+startDay = 23
+endDay = 29
 
 for (j in startDay:endDay) {
   loopDate = paste0(startYear,"-",startMonth,"-",formatC(j, width = 2, format ="d", flag = "0"))

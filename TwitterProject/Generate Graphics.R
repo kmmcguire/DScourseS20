@@ -1,9 +1,9 @@
 library(ggplot2)
 library(ggthemes)
 
-load("~/DScourseS20/TwitterProject/statistics.Rda")
-load("~/DScourseS20/TwitterProject/poll_avg_nat.Rda")
-load("~/DScourseS20/TwitterProject/poll_avg_state.Rda")
+load("~/DScourseS20/TwitterProject/ProcessedTweets/statistics.Rda")
+load("~/DScourseS20/TwitterProject/ProcessedTweets/poll_avg_nat.Rda")
+load("~/DScourseS20/TwitterProject/ProcessedTweets/poll_avg_state.Rda")
 
 dev.off()
 

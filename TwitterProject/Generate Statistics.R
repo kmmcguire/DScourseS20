@@ -1,6 +1,7 @@
 library(plyr)
 #Create vector of all daily sentiment data frames
 loopFile = paste0("_cs.Rda")
+setwd("~/DScourseS20/TwitterProject/ProcessedTweets")
 my_files <- list.files(pattern = loopFile)
 
 #Initialize master data frame

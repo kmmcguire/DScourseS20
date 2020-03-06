@@ -1,7 +1,8 @@
+setwd("~/DScourseS20/TwitterProject/ProcessedTweets")
+
 #Download FiveThirtyEight polling average file
 download.file("https://projects.fivethirtyeight.com/2020-primary-data/pres_primary_avgs_2020.csv",
               "538_avg.csv")
-
 poll_avg = read.csv("538_avg.csv")
 
 #Filter state polling averages

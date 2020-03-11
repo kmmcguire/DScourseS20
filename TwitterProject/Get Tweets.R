@@ -6,7 +6,7 @@ dateStart = "2020-03-04"
 dateEnd = "2020-03-05"
 
 sanders_query = paste0("@BernieSanders -filter:retweets -filter:replies since:",dateStart," until:",dateEnd)
-sandreiiuers_tweets <- search_tweets(sanders_query, n = 100000, retryonratelimit = TRUE)
+sanders_tweets <- search_tweets(sanders_query, n = 100000, retryonratelimit = TRUE)
 save(sanders_tweets,file=paste0("TwitterProject/RawTweets/sanders_",dateStart,".Rda"))
 
 biden_query = paste0("@JoeBiden -filter:retweets -filter:replies since:",dateStart," until:",dateEnd)

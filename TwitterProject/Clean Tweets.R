@@ -4,9 +4,8 @@ library(sentimentr)
 #Set date range of files to clean
 startYear = "2020"
 startMonth = "03"
-startDay = 01
-endDay = 04
-
+startDay = 05
+endDay = 06
 for (j in startDay:endDay) {
   loopDate = paste0(startYear,"-",startMonth,"-",formatC(j, width = 2, format ="d", flag = "0"))
   setwd("~/DScourseS20/TwitterProject/RawTweets")

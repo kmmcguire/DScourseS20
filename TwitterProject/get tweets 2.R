@@ -3,8 +3,8 @@ library(rtweet)
 load("~/DScourseS20/TwitterProject/Candidates.Rda")
 
 #Set date range from target start date to date after target end date
-dateStart = as.Date("2020-03-15")
-dateEnd = as.Date("2020-03-16")
+dateStart = as.Date("2020-03-29")
+dateEnd = as.Date("2020-03-30")
 
 for (row in 1:nrow(tweets)){
   if(tweets$dropout[row] > dateStart){
